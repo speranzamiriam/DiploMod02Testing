@@ -1,3 +1,11 @@
+/**
+ * Automatizacion de Test Case
+ * Esperanza Miriam Aquino Mamani
+ * Diplomado Modulo 2
+ * Tekhne - 2023
+ * Práctica del Módulo 2 - Mobile Testing & Web Services Rest Full
+ */
+
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
