@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="2" name="TEST SUITE" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>Para&nbsp;Pr&aacute;ctica del M&oacute;dulo 2 - Mobile Testing &amp; Web Services Rest Full</p>
+]]></details> 
+
+<testcase internalid="3" name="verificar que la Carga de la Opcion del Menu &quot;Inicio&quot;">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<pre>
+verificar que la Carga de la Opcion del Menu &quot;Inicio&quot;
+</pre>
+
+<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;Inicio&quot;</li>
+	<li>verficar que este visible el texto &quot;Verano en Rosario&quot;.</li>
+</ul>
+]]></summary>
+	<preconditions><![CDATA[<p>Tener iniciada la aplicaci&oacute;n</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;Inicio&quot;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>verficar que este visible el texto &quot;Verano en Rosario&quot;.</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="5" name="verificar que la Carga de la Opcion del Menu &quot;Circuitos&quot;">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<pre>
+verificar que la Carga de la Opcion del Menu &quot;Circuitos&quot; sea correctar
+</pre>
+
+<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;Circuitos&quot;</li>
+	<li>verficar que este visible el texto &quot;&Aacute;RBOLES DEL LAGUITO&quot;.</li>
+</ul>
+]]></summary>
+	<preconditions><![CDATA[<p>Tener iniciada la aplicaci&oacute;n</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;Circuitos&quot;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>verficar que este visible el texto &quot;&Aacute;RBOLES DEL LAGUITO&quot;.</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7" name="verificar que la Carga de la Opcion del Menu &quot;configuracion&quot;">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<pre>
+verificar que la Carga de la Opcion del Menu &quot;configuracion&quot; sea correcta
+</pre>
+
+<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;configuracion&quot;</li>
+	<li>verficar que este visible el texto &quot;Espa&ntilde;ol&quot;.</li>
+</ul>
+]]></summary>
+	<preconditions><![CDATA[<p>Tener iniciada la aplicaci&oacute;n</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;configuracion&quot;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>verficar que este visible el texto &quot;Espa&ntilde;ol&quot;.</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9" name="verificar que el cambio de lenguaje Español a Ingles">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<pre>
+verificar que el cambio de lenguaje Espa&ntilde;ol a Ingles sea correcta
+</pre>
+
+<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;configuracion&quot;</li>
+	<li>verficar que este visible el texto &quot;Ingles&quot;</li>
+	<li>ir a la opcion &quot;Ingles&quot;</li>
+	<li>guardar los cambios&nbsp;</li>
+	<li>verificar que en el inicio exista el texto &quot;ATTRACTION&quot;.</li>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;Setting&quot;</li>
+	<li>verficar que este visible el texto &quot;Spanish&quot;</li>
+	<li>ir a la opcion &quot;Spanish&quot;</li>
+	<li>guardar los cambios&nbsp;</li>
+	<li>verificar que en el inicio exista el texto &quot;Verano en Rosario&quot;.</li>
+</ul>
+]]></summary>
+	<preconditions><![CDATA[<p>Tener iniciada la aplicaci&oacute;n</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;configuracion&quot;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>verficar que este visible el texto &quot;Ingles&quot;</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>escoger &nbsp;la opcion &quot;Ingles&quot;</li>
+	<li>guardar los cambios&nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>verificar que en el inicio exista el texto &quot;ATTRACTION&quot;.</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;Setting&quot;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>verficar que este visible el texto &quot;Spanish&quot;</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>escoger la opcion &quot;Spanish&quot;</li>
+	<li>guardar los cambios&nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>verificar que en el inicio exista el texto &quot;Verano en Rosario&quot;.</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="11" name="verificar que al guardar la configuracion se valide que se hayan realizado cambios">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<pre>
+verificar que al guardar la configuracion se valide que se hayan realizado cambios
+</pre>
+
+<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;configuracion&quot;</li>
+	<li>digitar en la opcion guardar los cambios&nbsp;</li>
+	<li>verificar que se muestre el texto &quot;Para que los cambios sean almacenados deb&eacute;s modificar la configuraci&oacute;n&quot;</li>
+</ul>
+]]></summary>
+	<preconditions><![CDATA[<p>Tener iniciada la aplicaci&oacute;n</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<ul>
+	<li>ir a la opcion del menu izquierdo</li>
+	<li>elegir la opcion &quot;configuracion&quot;</li>
+	<li>digitar en la opcion guardar los cambios&nbsp;</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<ul>
+	<li>verificar que se muestre el texto &quot;Para que los cambios sean almacenados deb&eacute;s modificar la configuraci&oacute;n&quot;</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

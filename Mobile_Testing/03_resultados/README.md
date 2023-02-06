@@ -1,3 +1,3 @@
 # video de demostración de ejecución de pruebas automatizadas.
 
-[Video en youtube](https://youtu.be/jaCmaOtMJPg)
+[Video en YouTube](https://youtu.be/jaCmaOtMJPg)
