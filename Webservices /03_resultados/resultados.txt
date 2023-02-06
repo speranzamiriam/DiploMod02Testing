@@ -1,0 +1,59 @@
+Running SoapUI TestRunner for [Modulo02_REST]
+directory: /Applications/SoapUI-5.7.0.app/Contents/java/app/bin
+command: sh -c ./testrunner.sh -s"WS TestSuite" -r -a -j -f/Applications/SoapUI-5.7.0.app/Contents/java/app/bin/reportes /Users/speranza/Documents/DIPLOMADO_TEST/Modulo02-REST-soapui-project.xml
+================================
+=
+= SOAPUI_HOME = /Applications/SoapUI-5.7.0.app/Contents/java/app
+=
+================================
+SoapUI 5.7.0 TestCase Runner
+Configuring log4j from [/Applications/SoapUI-5.7.0.app/Contents/java/app/bin/soapui-log4j.xml]
+Java HotSpot(TM) 64-Bit Server VM warning: Ignoring option --illegal-access=permit; support was removed in 17.0
+17:12:13,669 INFO  [DefaultSoapUICore] Creating new settings at [/Users/speranza/soapui-settings.xml]
+17:12:14,368 INFO  [PluginManager] Adding plugin from [/Users/speranza/.soapuios/plugins/ready-mqtt-plugin-dist.jar]
+17:12:14,368 INFO  [PluginManager] Adding plugin from [/Users/speranza/.soapuios/plugins/readyapi-postman-1.0.1.jar]
+17:12:14,966 INFO  [PluginManager] Adding plugin from [/Users/speranza/.soapuios/plugins/ready-uxm-plugin-os-1.0.3.jar]
+17:12:15,286 INFO  [PluginManager] 3 plugins loaded in 917 ms
+17:12:15,286 INFO  [DefaultSoapUICore] All plugins loaded
+17:12:15,653 INFO  [WsdlProject] Loaded project from [file:/Users/speranza/Documents/DIPLOMADO_TEST/Modulo02-REST-soapui-project.xml]
+17:12:15,655 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Modulo02_REST]
+17:12:15,656 INFO  [SoapUITestCaseRunner] Running TestSuite [WS TestSuite], runType = SEQUENTIAL
+17:12:15,663 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [/pet TC validacion para que el campo ID no acepte letras]
+17:12:15,665 INFO  [SoapUITestCaseRunner] running step [Request 1]
+17:12:17,262 INFO  [SoapUITestCaseRunner] Assertion [JsonPath Validar que el campo Estatus tenga valor de 400] has status VALID
+17:12:17,262 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Validar que el estatus sea 400] has status VALID
+17:12:17,272 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [/pet TC validacion para que el campo ID no acepte letras], time taken: 570ms, status: FINISHED
+17:12:17,273 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [/pet TC validacion de insercion de registro PET]
+17:12:17,274 INFO  [SoapUITestCaseRunner] running step [Request 1]
+17:12:17,574 INFO  [SoapUITestCaseRunner] Assertion [JsonPath validar que exista el campo ID] has status VALID
+17:12:17,574 INFO  [SoapUITestCaseRunner] Assertion [JsonPath Validar que la categoria sea 'Canino'] has status VALID
+17:12:17,575 INFO  [SoapUITestCaseRunner] Assertion [JsonPath Match] has status VALID
+17:12:17,575 INFO  [SoapUITestCaseRunner] Assertion [JsonPath Validar que el primer TAG sea 'pura sangre'] has status VALID
+17:12:17,576 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [/pet TC validacion de insercion de registro PET], time taken: 143ms, status: FINISHED
+17:12:17,576 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [/pet/findByStatus TC validar que su invocacion sea correcta]
+17:12:17,576 INFO  [SoapUITestCaseRunner] running step [Request 1]
+17:12:17,872 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status - validar que el estatus sea 200] has status VALID
+17:12:17,873 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [/pet/findByStatus TC validar que su invocacion sea correcta], time taken: 141ms, status: FINISHED
+17:12:17,877 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [/store/order TC validacion de insercion de ORDER]
+17:12:17,878 INFO  [SoapUITestCaseRunner] running step [Request 1]
+17:12:18,165 INFO  [SoapUITestCaseRunner] Assertion [JsonPath - validar existencia del campo ID] has status VALID
+17:12:18,165 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP - Validar que estatus sea 200] has status VALID
+17:12:18,166 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [/store/order TC validacion de insercion de ORDER], time taken: 139ms, status: FINISHED
+17:12:18,166 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [/store/inventory TC validacion de carga de inventory]
+17:12:18,166 INFO  [SoapUITestCaseRunner] running step [Request 1]
+17:12:18,443 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP - validacion de estatus 200] has status VALID
+17:12:18,443 INFO  [SoapUITestCaseRunner] Assertion [JsonPath Validacion de existencia de "sold"] has status VALID
+17:12:18,443 INFO  [SoapUITestCaseRunner] Assertion [JsonPath Existence Match] has status VALID
+17:12:18,443 INFO  [SoapUITestCaseRunner] Assertion [JsonPath Validacion de existencia de "available"] has status VALID
+17:12:18,444 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [/store/inventory TC validacion de carga de inventory], time taken: 136ms, status: FINISHED
+17:12:18,446 INFO  [SoapUITestCaseRunner] TestSuite [WS TestSuite] finished with status [FINISHED] in 2787ms
+
+SoapUI 5.7.0 TestCaseRunner Summary
+-----------------------------
+Time Taken: 2790ms
+Total TestSuites: 1
+Total TestCases: 5 (0 failed)
+Total TestSteps: 5
+Total Request Assertions: 13
+Total Failed Assertions: 0
+Total Exported Results: 5

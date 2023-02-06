@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="23" name="TEST SUITE" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="24" name="validacion para que en el registro de un PET el campo ID no acepte letras">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>validacion para que en el registro de un PET el campo ID no acepte letras</p>
+]]></summary>
+	<preconditions><![CDATA[<p>El endpoint se encuentra viable</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>crear una sesion POST a&nbsp;/pet para a&ntilde;adir un registro PET con los parametros:</p>
+
+<p>{<br />
+&nbsp; &quot;id&quot;: 34DDD,<br />
+&nbsp; &quot;category&quot;: {<br />
+&nbsp; &nbsp; &quot;id&quot;: 0,<br />
+&nbsp; &nbsp; &quot;name&quot;: &quot;string&quot;<br />
+&nbsp; },<br />
+&nbsp; &quot;name&quot;: &quot;doggie&quot;,<br />
+&nbsp; &quot;photoUrls&quot;: [<br />
+&nbsp; &nbsp; &quot;string&quot;<br />
+&nbsp; ],<br />
+&nbsp; &quot;tags&quot;: [<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &quot;id&quot;: 0,<br />
+&nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;string&quot;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; ],<br />
+&nbsp; &quot;status&quot;: &quot;available&quot;<br />
+}</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>El reponse debe tener el status debe ser 400</p>
+
+<p>En el cuerpo de respuesta debe existir un campo &quot;estatus&quot; con el valor 400</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="27" name="validacion de la correcta insercion de un registro PET">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>validacion de la correcta insercion de un registro PET</p>
+]]></summary>
+	<preconditions><![CDATA[<p>El endpoint se encuentra viable</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p><a href="http://localhost:8086/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=24&amp;tcversion_id=25&amp;goback_url=http%3A%2F%2Flocalhost%3A8086%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D24%26show_mode%3Dshow&amp;step_id=26">crear una sesion POST a&nbsp;/pet para a&ntilde;adir un registro PET con los parametros:</a></p>
+
+<p>{<br />
+&nbsp; &quot;id&quot;: 0,<br />
+&nbsp; &quot;category&quot;: {<br />
+&nbsp; &nbsp; &quot;id&quot;: 23,<br />
+&nbsp; &nbsp; &quot;name&quot;: &quot;canino&quot;<br />
+&nbsp; },<br />
+&nbsp; &quot;name&quot;: &quot;doggie&quot;,<br />
+&nbsp; &quot;photoUrls&quot;: [<br />
+&nbsp; &nbsp; &quot;string&quot;<br />
+&nbsp; ],<br />
+&nbsp; &quot;tags&quot;: [<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &quot;id&quot;: 1,<br />
+&nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;pura sangre&quot;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; ],<br />
+&nbsp; &quot;status&quot;: &quot;available&quot;<br />
+}</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>el Response tiene un status de 200</p>
+
+<p>el cuerpo del response tiene un campo ID</p>
+
+<p>el cuerpo del response tiene un campo &quot;categoria&quot; con el valor &quot;canino&quot;</p>
+
+<p>el cuerpo del response tiene una lista de &quot;tag&quot; cuyo primer valor es&nbsp;&quot;pura sangre&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="30" name="validacion de la carga correcta a la busqueda por STATUS">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>validar que la invocacion sea correcta a la busqueda por STATUS</p>
+]]></summary>
+	<preconditions><![CDATA[<p>el endpoint se encuentra viable</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p><a href="http://localhost:8086/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=24&amp;tcversion_id=25&amp;goback_url=http%3A%2F%2Flocalhost%3A8086%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D24%26show_mode%3Dshow&amp;step_id=26">crear una sesion GET&nbsp;a&nbsp;/pet/findByStatus&nbsp;para l</a>istar los registros&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>el Response tiene un status de 200</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="33" name="validacion de insercion de un registro ORDER">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>validacion de insercion de un registro ORDER</p>
+]]></summary>
+	<preconditions><![CDATA[<p>el endpoint se encuentra viable</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<table>
+	<tbody>
+		<tr>
+			<td>
+			<p><a href="http://localhost:8086/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=24&amp;tcversion_id=25&amp;goback_url=http%3A%2F%2Flocalhost%3A8086%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D24%26show_mode%3Dshow&amp;step_id=26">crear una sesion POST a store/order&nbsp;para a&ntilde;adir un registro ORDER&nbsp;con los parametros:</a></p>
+
+			<p>{<br />
+			&nbsp; &quot;id&quot; : 0,<br />
+			&nbsp; &quot;petId&quot; : 0,<br />
+			&nbsp; &quot;quantity&quot; : 0,<br />
+			&nbsp; &quot;shipDate&quot; : &quot;2015-07-20T15:49:04-07:00&quot;,<br />
+			&nbsp; &quot;status&quot; : &quot;placed&quot;,<br />
+			&nbsp; &quot;complete&quot; : true<br />
+			}</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+]]></actions>
+	<expectedresults><![CDATA[<p>el Response tiene un status de 200</p>
+
+<p>el cuerpo del response tiene un campo ID</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="36" name="validacion de la carga correcta del listado de &quot;inventory&quot;">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>validacion de carga correcta del listado de &quot;inventory&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>el endpoint se encuentra viable</p>
+]]></preconditions>
+	<execution_type><![CDATA[2]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p><a href="http://localhost:8086/lib/testcases/tcEdit.php?doAction=editStep&amp;testcase_id=24&amp;tcversion_id=25&amp;goback_url=http%3A%2F%2Flocalhost%3A8086%2Flib%2Ftestcases%2FarchiveData.php%3Ftcase_id%3D24%26show_mode%3Dshow&amp;step_id=26">crear una sesion GET&nbsp;a /store/inventory&nbsp;</a></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>el Response tiene un status de 200</p>
+
+<p>el cuerpo del response tiene un campo &quot;sold&quot;</p>
+
+<p>el cuerpo del response tiene un campo &quot;available&quot;</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[2]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>
